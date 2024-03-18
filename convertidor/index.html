@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Convertidor de Unidades</title>
+</head>
+
+<body>
+    <main class="main">
+        <article class="calculator__container">
+            <h1 class="calculator__title">UNIT CONVERT</h1>
+            <select name="units" id="units" class="calculator__select">
+                <option value="Choose the units for conversion" class="calculator__options" selected disabled>Choose the
+                    units for conversion</option>
+                <option value="kilometers to Miles" class="calculator__options">kilometers to Miles</option>
+                <option value="Miles to Kilometers" class="calculator__options">Miles to Kilometers</option>
+            </select>
+            <input type="number" class="calculator__input" placeholder="Enter number...">
+            <input type="submit" class="calculator__cta" onclick="convert()">
+            <p class="calculator__result">Result : <span class="calculator__p"></span></p>
+        </article>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

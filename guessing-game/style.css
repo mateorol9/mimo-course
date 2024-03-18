@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font: 'Lexend Deca', sans-serif;
+    --font-size-title: clamp(1.5rem, 0.9rem + 3.2vw, 2rem);
+    --background: #252746;
+    --card-color: #191b33;
+    --main-color: #b9bbd2;
+    --white: #fff;
+    --cta-color: #9C75E6;
+    --bad: rgb(240, 113, 40);
+    --good: #21f921;
+    --border-3d: 3px 3px 13px;
+    --border-color: #333661;
+    --shadow: 15px 15px 30px #222441,
+             -15px -15px 30px #444881;
+    
+}
+body {
+    background: var(--background);
+}
+body, input, select {
+    font-family: var(--font);
+}
+.main {
+    display: grid;
+    place-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+}
+.game__container {
+    width: clamp(280px, 90% ,400px);
+    padding: 30px 10px;
+    border: solid var(--border-color);
+    border-width: var(--border-3d);
+    border-radius: 20px;
+
+    text-align: center;
+    color: var(--main-color);
+    background-color: var(--card-color);
+}
+.game__title {
+    margin-block-end: 16px;
+    font-size: var(--font-size-title);
+}
+.game__text {
+    margin-block-end: 16px;
+
+    font-size: 1rem;
+    font-weight: 300;
+}
+.game__input {
+    display: block;
+    width: min(90%, 275px);
+    height: 46px;
+    
+    margin: 0 auto 16px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    outline-color: var(--card-color);
+}
+.game__cta {
+    width: min(100%, 295px);
+    padding: 10px 8px;
+    margin-block-end: 20px;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--cta-color);
+    cursor: pointer;
+}
+.game__result {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--bad);
+    
+}
+.game__result.good {
+    color: var(--good);
+}
